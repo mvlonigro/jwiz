@@ -1,0 +1,67 @@
+﻿ol.progtrckr, ol.progtracker {
+    margin: 0;
+    padding: 0;
+    list-style-type: decimal;
+}
+ol.progtrckr li, ol.progtracker li {
+    display: inline-block;
+    text-align: center;
+    line-height: 3em;
+}
+ol.progtrckr[data-progtrckr-steps="2"] li, ol.progtracker[data-progtracker-steps="2"] li { width: 49%; }
+ol.progtrckr[data-progtrckr-steps="3"] li, ol.progtracker[data-progtracker-steps="3"] li { width: 33%; }
+ol.progtrckr[data-progtrckr-steps="4"] li, ol.progtracker[data-progtracker-steps="4"] li { width: 24%; }
+ol.progtrckr[data-progtrckr-steps="5"] li, ol.progtracker[data-progtracker-steps="5"] li { width: 19%; }
+ol.progtrckr[data-progtrckr-steps="6"] li, ol.progtracker[data-progtracker-steps="6"] li { width: 16%; }
+ol.progtrckr[data-progtrckr-steps="7"] li, ol.progtracker[data-progtracker-steps="7"] li { width: 14%; }
+ol.progtrckr[data-progtrckr-steps="8"] li, ol.progtracker[data-progtracker-steps="8"] li { width: 12%; }
+ol.progtrckr[data-progtrckr-steps="9"] li, ol.progtracker[data-progtracker-steps="9"] li { width: 11%; }
+ol.progtrckr li.progtrckr-done, ol.progtracker li.progtracker-done {
+    color: black;
+    border-bottom: 4px solid #009F6B;
+}
+ol.progtrckr li.progtrckr-todo, ol.progtracker li.progtracker-todo {
+    color: silver; 
+    border-bottom: 4px solid silver;
+}
+ol.progtrckr li.progtrckr-current, ol.progtracker li.progtracker-current {
+    color: black; 
+    font-weight: bold;
+    border-bottom: 4px solid #AE841A;
+}
+
+ol.progtrckr li:after, ol.progtracker li:after {
+    content: "\00a0\00a0";
+}
+ol.progtrckr li:before, ol.progtracker li:before {
+    position: relative;
+    bottom: -2.5em;
+    float: left;
+    left: 50%;
+    line-height: 1em;
+}
+ol.progtrckr li.progtrckr-done:before, ol.progtracker li.progtracker-done:before {
+    content: "\2713";
+    color: white;
+    background-color: #009F6B;
+    height: 1.2em;
+    width: 1.2em;
+    line-height: 1.2em;
+    border: none;
+    border-radius: 1.2em;
+}
+ol.progtrckr li.progtrckr-todo:before, ol.progtracker li.progtracker-todo:before {
+    content: "\039F";
+    color: silver;
+    background-color: white;
+    font-size: 1.5em;
+    bottom: -1.6em;
+}
+
+ol.progtrckr li.progtrckr-current:before, ol.progtracker li.progtracker-current:before {
+    content: "\039F";
+    color: #AE841A;
+    background-color: white;
+     font-size: 1.5em;
+    bottom: -1.6em;
+}
